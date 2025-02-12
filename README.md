@@ -34,3 +34,32 @@ Chat_Web_App/
     .env
     server.py
 ```
+
+## Project Architecture
+### `__init__.py`
+
+Initialization of the Flask application, configuration, and extension setup.
+
+### `config.py`
+
+Configuration settings for the Flask application, including the secret key and database URI.
+
+### `database.py`
+
+Database models and schema definition using SQLAlchemy. Includes user, chat, and message models.
+
+### `views.py`
+
+Blueprint for route views, including login, registration and chat.
+
+### `server.py`
+
+Entry point for running the server. Initializes the Flask application and Socket.IO communication events.
+
+## Key Features 
+- Secure User Authentication: Users can register and log in securely with password hashing to protect credentials.
+- Real-time Messaging: Instant chat updates in individual chat rooms without refreshing the page.
+- Dynamic Chat List: Automatically updates the chat list with new messages and active users.
+- Message History: Stores chat history so users can view previous conversations.
+
+  
