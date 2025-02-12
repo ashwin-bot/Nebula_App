@@ -56,6 +56,8 @@ Blueprint for route views, including login, registration and chat.
 
 Entry point for running the server. Initializes the Flask application and Socket.IO communication events.
 
+![alt text](http://url/to/img.png)
+
 ## Key Features 
 - Secure User Authentication: Users can register and log in securely with password hashing to protect credentials.
 - Real-time Messaging: Instant chat updates in individual chat rooms without refreshing the page.
