@@ -2,8 +2,7 @@ from flask import Blueprint, render_template, request, url_for, redirect, sessio
 from Myapp.database import *
 from functools import wraps
 
-import pandas as pd
-import matplotlib.pyplot as plt
+
 from Myapp import socket
 
 views = Blueprint('views', __name__, static_folder='static', template_folder='templates')
@@ -226,17 +225,6 @@ def ftime(date):
     formatted_time += " | " + dt.strftime("%m/%d")
     return formatted_time
 
-
-@views.route('/visualize')
-def visualize():
-    """
-    TODO: Utilize pandas and matplotlib to analyze the number of users registered to the app.
-    Create a chart of the analysis and convert it to base64 encoding for display in the template.
-
-    Returns:
-        Response: Flask response object.
-    """
-    pass
 
 
 @views.route('/get_name')

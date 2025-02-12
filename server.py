@@ -1,7 +1,7 @@
 
 from Myapp import create_app
 from Myapp.database import db, Message, ChatMessage
-from flask_socketio import emit, join_room, leave_room
+from flask_socketio import emit, join_room
 
 app, socket = create_app()
 
