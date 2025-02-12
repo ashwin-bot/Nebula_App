@@ -36,6 +36,9 @@ Chat_Web_App/
 ```
 
 ## Project Architecture
+
+![working_of_application](https://github.com/user-attachments/assets/329536f9-ef45-42f0-892f-ea665bf2a03f)
+
 ### `__init__.py`
 
 Initialization of the Flask application, configuration, and extension setup.
@@ -56,7 +59,7 @@ Blueprint for route views, including login, registration and chat.
 
 Entry point for running the server. Initializes the Flask application and Socket.IO communication events.
 
-![alt text](http://url/to/img.png)
+
 
 ## Key Features 
 - Secure User Authentication: Users can register and log in securely with password hashing to protect credentials.
